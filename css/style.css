@@ -322,6 +322,7 @@ button {
      width: 100%;
      background: transparent;
      padding: 30px 30px;
+     padding-top: 80px;
      
 }
 .scroll-section{
@@ -435,8 +436,6 @@ button {
      font-family: 'Baloo Chettan', cursive;
      text-transform: uppercase;
      transition: background .5s;
-     height: 80px;
-
 }
 nav.scrolled {
      background: #0891f8;
