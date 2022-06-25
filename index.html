@@ -20,6 +20,8 @@
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
+
+
 </head>
 <!-- body -->
 
@@ -34,9 +36,8 @@
          <a class="navbar-brand" href="index.html">
             <img src="./images/san-polychem.png" alt="" srcset="" width="100">
          </a>
-         <button class="navbar-toggler"  type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <img src="./images/menu_icon.png" width="25" alt="">
          </button>
 
@@ -55,9 +56,12 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                      <a class="dropdown-item" href="products.html#PU-Footwear-system" text-white>PU Footwear system</a>
-                     <a class="dropdown-item" href="products.html#Industrial-Water-Treatment-Chemicals" text-white>Industrial Water Treatment Chemicals</a>
-                     <a class="dropdown-item" href="products.html#Custom-Made-Chemicals" text-white>Custom-made Chemicals</a>
-                     <a class="dropdown-item" href="products.html#Additives-Adhesives-Catalysts" text-white>Additives, Adhesives & Catalysts</a>
+                     <a class="dropdown-item" href="products.html#Industrial-Water-Treatment-Chemicals"
+                        text-white>Industrial Water Treatment Chemicals</a>
+                     <a class="dropdown-item" href="products.html#Custom-Made-Chemicals" text-white>Custom-made
+                        Chemicals</a>
+                     <a class="dropdown-item" href="products.html#Additives-Adhesives-Catalysts" text-white>Additives,
+                        Adhesives & Catalysts</a>
                   </div>
                </li>
                <li class="nav-item">
@@ -177,7 +181,6 @@
                               </li>
                            </ul>
                         </div>
-                        <!-- <a class="read_more" href="#">Read more</a> -->
                      </div>
                   </div>
                </div>
@@ -207,6 +210,12 @@
                      develop the products which have an appropriate design based formulation, useful to clients in terms
                      of applications, cost & workability.
                   </p>
+                  <p class="more-cont" style="display:none;">Our manufacturing processes are standardised according to
+                     the desired physical or
+                     chemical
+                     specifications. With our state of the art lab infrastructure and hard-working team, San Polychem is
+                     committed to bring a constant improvement & new developments in Products, processes & manufacturing
+                     standards which makes us apart from rest of the market players.</p>
                   <a class="read_more" href="#">Read more</a>
                </div>
             </div>
@@ -220,7 +229,13 @@
                      International standards of Quality. Our manufacturing process is based on a latest technological
                      innovations and our own Standard operating procedures. Our people are highly skilled and regularly
                      trained in making quality led decisions in the plant.</p>
-                     <a class="read_more" href="#">Read more</a>
+                  <p class="more-cont" style="display:none;">To control all the major performance factors of chemicals, our chemists ensures regular or random
+                     sample testing of various parameters in the incoming goods. Our finished products goes through a
+                     strict parameter testing, we ensure that the Product Datasheets that are send to the customers are
+                     the actual specifications of the product sample to lead easy decision making in the customers’
+                     processes. Our quality control practices goes beyond product characteristics to include
+                     Manufacturing & expiry Dates, packaging quality & after sales service.</p>
+                  <a class="read_more" href="#">Read more</a>
                </div>
             </div>
          </div>
@@ -401,19 +416,20 @@
                <form class="main_form ">
                   <div class="row">
                      <div class="col-md-12 ">
-                        <input class="form_contril" placeholder="Name " type="text" name="Name ">
+                        <input class="form_contril" name="name" placeholder="Name " type="text" required>
+                        <input type="hidden" name="to_email" value="info@sanpolychem.com">
                      </div>
                      <div class="col-md-12">
-                        <input class="form_contril" placeholder="Phone Number" type="text" name=" Phone Number">
+                        <input class="form_contril" name="subject" placeholder="Subject" type="text" required>
                      </div>
                      <div class="col-md-12">
-                        <input class="form_contril" placeholder="Email" type="text" name="Email">
+                        <input class="form_contril" type="email" name="email" placeholder="Email" type="text" required>
                      </div>
                      <div class="col-md-12">
-                        <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                        <textarea class="textarea" name="message" placeholder="Message" type="text" required></textarea>
                      </div>
                      <div class="col-sm-12">
-                        <button class="send_btn">Send</button>
+                        <button class="send_btn" type="submit">Send</button>
                      </div>
                   </div>
                </form>
@@ -474,6 +490,32 @@
             navbar.classList.remove('scrolled')
          }
       }
+   </script>
+   <script>
+      $(function () {
+         $('form').submit(function () {
+            $.ajax({
+               type: 'POST',
+               url: 'https://agglutinative-diamo.000webhostapp.com/mail_send.php',
+               data: $(this).serialize(),
+               error: function (error) {
+               },
+               success: function (response) {
+                  alert(response);
+                  location.reload()
+               }
+            });
+            return false;
+         });
+      })
+   </script>
+   <script>
+      $('.read_more').click(function (e) {
+         e.preventDefault();
+         $(this).text(function (i, t) {
+            return t == 'Read less' ? 'Read more' : 'Read less';
+         }).prev('.more-cont').slideToggle()
+      });
    </script>
 </body>
 
