@@ -10,11 +10,13 @@
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="Rineesh">
-   <link rel="icon" href="/images/logo.png"/>
+   <link rel="icon" href="/images/logo.png" />
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/responsive.css">
    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen">
@@ -29,36 +31,50 @@
    <!-- header -->
    <div class="container-fluid">
       <nav class="navbar navbar-expand-lg fixed-top">
-         <a class="navbar-brand" href="index.html" style="background-color: white; border-radius: 50%;">
+         <a class="navbar-brand" href="index.html">
             <img src="./images/san-polychem.png" alt="" srcset="" width="100">
-          </a>
-         <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
+         </a>
+         <button class="navbar-toggler"  type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <img src="./images/menu_icon.png" width="25" alt="">
          </button>
-       
+
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <ul class="navbar-nav mr-auto">
-             <li class="nav-item active">
-               <a class="nav-link text-white" href="#home">Home</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link text-white" href="#about">About</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link text-white" href="#products">Products</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link text-white" href="#contact">Contact us</a>
-             </li>
-           </ul>
-           
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item active">
+                  <a class="nav-link text-white" href="#home">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link text-white" href="#about">About</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="products.html#PU-Footwear-system" text-white>PU Footwear system</a>
+                     <a class="dropdown-item" href="products.html#Industrial-Water-Treatment-Chemicals" text-white>Industrial Water Treatment Chemicals</a>
+                     <a class="dropdown-item" href="products.html#Custom-Made-Chemicals" text-white>Custom-made Chemicals</a>
+                     <a class="dropdown-item" href="products.html#Additives-Adhesives-Catalysts" text-white>Additives, Adhesives & Catalysts</a>
+                  </div>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link text-white" href="#contact">Contact us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link text-white" href="join-us.html">Join Our Team</a>
+               </li>
+            </ul>
+
          </div>
-       </nav>
+      </nav>
    </div>
    <header>
       <!-- header inner -->
       <div class="head_top">
-  
+
          <!-- banner -->
          <section class="banner_main" id="home">
             <div class="container-fluid">
@@ -66,7 +82,9 @@
                   <div class="col-md-6">
                      <div class="text-bg">
                         <h1>San Polychem</h1>
-                        <p>San Polychem is a leading Polyurethane & Water Treatment Speciality Chemicals Manufacturer. We specialize in custom build solutions to solve wide range of Industrial problems ranging in PU Footwear Manufacturing, textiles, cement, power, oil & gas and many other industries.</p>
+                        <p>San Polychem is a leading Polyurethane & Water Treatment Speciality Chemicals Manufacturer.
+                           We specialize in custom build solutions to solve wide range of Industrial problems ranging in
+                           PU Footwear Manufacturing, textiles, cement, power, oil & gas and many other industries.</p>
                         <a href="#contact">Contact us</a>
                      </div>
                   </div>
@@ -86,9 +104,7 @@
          <div class="row">
             <div class="col-md-12">
                <div class="titlepage">
-                  <span>Welcome To Our Company</span>
-                  <!-- <h2>Better position of Business</h2>
-                     <p>It is a long established fact that a reader will be distracted by the readable content of a page </p> -->
+                  <span>Company Brief</span>
                </div>
             </div>
          </div>
@@ -97,7 +113,7 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="business_box ">
-                        <figure><img src="images/business_img.jpg" alt="#" /></figure>
+                        <figure><img src="images/business_img.png" alt="#" /></figure>
                         <p>San Polychem is a leading Polyurethane & Water Treatment Speciality Chemicals Manufacturer.
                            We specialize in custom build solutions to solve wide range of Industrial problems ranging in
                            PU Footwear Manufacturing, textiles, cement, power, oil & gas and many other industries</p>
@@ -105,7 +121,6 @@
                            unmatched quality and rigorous testing procedures in our state of the art lab. Apart from the
                            quality standards in manufacturing we have a wide range of service partners who can handle
                            any kind of bottlenecks in the end user processes on-site.</p>
-                        <!-- <a class="read_more" href="#">Read more</a> -->
                      </div>
                   </div>
                </div>
@@ -114,7 +129,7 @@
       </div>
    </div>
    <!-- Projects -->
-   <div class="projects" id="about">
+   <div class="projects scroll-section" id="about">
       <div class="container">
          <div class="row">
             <div class="col-md-12">
@@ -170,8 +185,58 @@
          </div>
       </div>
    </div>
+   <div class="services" style="margin-top: 50px;
+   padding: 15px;
+   padding-bottom: 60px;"">
+      <div class=" container">
+      <div class="row">
+         <div class="col-md-12 section-title text-center">
+            <h3>We Are Best At Our Service</h3>
+            <p>We specialize in PU Footwear Manufacturing, textiles, cement, power, oil & gas and many other industries.
+            </p>
+            <span class="section-title-line"></span>
+         </div>
+
+         <div class="col-md-6 col-sm-12 col-xs-12 mt-3">
+            <div class="service-box text-center">
+               <div class="icon"> <i class="fas fa-chart-line"></i> </div>
+               <div class="icon-text">
+                  <h4 class="title-box">Research & Development</h4>
+                  <p>San Polychem’s focus is always to build products that have an extensive backing of Research &
+                     Development. Our researchers works closely with the process engineers and plant engineers to
+                     develop the products which have an appropriate design based formulation, useful to clients in terms
+                     of applications, cost & workability.
+                  </p>
+                  <a class="read_more" href="#">Read more</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-6 col-sm-12 col-xs-12 mt-3">
+            <div class="service-box text-center">
+               <div class="icon"> <i class="fas fa-bug "></i> </div>
+               <div class="icon-text">
+                  <h4 class="title-box">Quality Control</h4>
+                  <p>Quality is the main focus of all our endeavours. Our products and processes strictly comply with
+                     International standards of Quality. Our manufacturing process is based on a latest technological
+                     innovations and our own Standard operating procedures. Our people are highly skilled and regularly
+                     trained in making quality led decisions in the plant.</p>
+                     <a class="read_more" href="#">Read more</a>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+   </div>
    <!-- Vision and mission -->
-   <section style="background: #0891f8;   margin-top: 25px">
+   <section style="background-image: url(./images/s-2.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: 100% 100%;
+   margin-top: 50px;
+   padding: 15px;
+   padding-bottom: 60px;">
       <div class="business">
          <div class="titlepage">
             <h2>
@@ -189,75 +254,51 @@
          </div>
       </div>
    </section>
-   <div class="business" id="products">
+
+   <section class="service_section">
       <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-               <div class="titlepage">
-                  <span>Products & Applications</span>
+         <div class="titlepage">
+            <h2>
+               Our Products & Applications
+            </h2>
+         </div>
+         <div class="service_container layout_padding2">
+            <div class="service_box">
+               <div class="img-box">
+                  <img src="images/s-1.jpg" alt="">
+               </div>
+               <div class="detail-box">
+                  <h4>
+                     PU Footwear system – SANYOL® PU
+                  </h4>
+               </div>
+            </div>
+            <div class="service_box">
+               <div class="img-box">
+                  <img src="images/s-2.jpg" alt="">
+               </div>
+               <div class="detail-box">
+                  <h4>
+                     Industrial Water Treatment Chemicals – SANYOL® WT
+                  </h4>
+               </div>
+            </div>
+            <div class="service_box">
+               <div class="img-box">
+                  <img src="images/s-3.jpg" alt="">
+               </div>
+               <div class="detail-box">
+                  <h4>
+                     Additives, Adhesives & Catalysts – SANYOL® AD
+                  </h4>
                </div>
             </div>
          </div>
-         <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-               <div class="business_box ">
-                  <h2>PU Footwear system – SANYOL® PU</h2>
-                  <p>India is the 2nd largest producer of footwear in world with a CAGR (2022-27) of about 12.83%. Our
-                     market research shows that many of the earlier manufacturers in footwear have transferred their
-                     operations from a rubber base to PU. PU Soles have revolutionized how footwear is manufactured and
-                     used. The Italian PU footwear machines were the first fully automatic machines which improved the
-                     productivity and number of pairs per day for the user company. Followed by Chinese and Indian
-                     machines the whole game got changed as the capex reduced and every footwear manufacturer tried to
-                     get an in house PU Footwear manufacturing machine. </p>
-                  <a class="read_more" href="#">Read more</a>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-6">
-               <div class="business_box ">
-                  <h2>Industrial Water Treatment Chemicals – SANYOL® WT</h2>
-                  <p>According to a recent report of Government & Independent organisations, about 22% of fresh water is
-                     being used by Industries. In India, comparing per person availability of water in 2001 at 1816
-                     Litres to 1367 Litres in 2031 is being projected which is a matter of concern. With rising
-                     population and rising demand of industries the situation might get further deteriorated for
-                     availability of water. We need to act and need to act fast. Our target should be to maximize
-                     recyclability and reusability of this 22% of Water as it will also reduce the fresh water
-                     contaminations caused due to mixing of Industrial streams and Fresh Water stream. </p>
-                  <a class="read_more" href="#">Read more</a>
-               </div>
-            </div>
-            <div class="col-md-6"></div>
-         </div>
-         <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-               <div class="business_box ">
-                  <h2>Custom-made Chemicals – SANYOL® FLEX</h2>
-                  <p>Custom-made chemicals are high demand specialized chemicals used in highly sensitive or demanding
-                     situations in various Industries like Pharma, Chemicals, Oil & Gas etc. We have a highly qualified
-                     and experienced team to study the situations and recommend a custom built solution for it. Be it
-                     Water Treatment, PU Footwear, packaging, or any other chemical requirement we do it all.</p>
-                  <a class="read_more" href="mailto:flex@sanpolychem.com">For query</a>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-6">
-               <div class="business_box ">
-                  <h2>Additives, Adhesives & Catalysts – SANYOL® AD</h2>
-                  <p>San Polychem always have a holistic approach towards solving Industrial Problems through Chemicals.
-                     We are always looked forward from our clients for giving them a best and complete end to end
-                     solution for solving their needs. We have developed a Product range SANYOL® AD to cater to small
-                     yet useful requirements from clients helping them in process excellence in their plants. </p>
-                  <a class="read_more" href="#">Read more</a>
-               </div>
-            </div>
-            <div class="col-md-6"></div>
+         <div>
+            <a class="read_more" href="products.html">Read more</a>
          </div>
       </div>
-   </div>
+   </section>
    <!-- Testimonial -->
    <div class="section">
       <div class="container">
@@ -337,7 +378,7 @@
       </div>
    </div>
    <!-- contact -->
-   <div id="contact" class="contact">
+   <div id="contact" class="contact scroll-section">
       <div class="container">
          <div class="row">
             <div class="col-md-12">
@@ -424,15 +465,15 @@
    <script>
       var navbar = document.querySelector('nav')
 
-window.onscroll = function() {
+      window.onscroll = function () {
 
-  // pageYOffset or scrollY
-  if (window.pageYOffset > 50) {
-    navbar.classList.add('scrolled')
-  } else {
-    navbar.classList.remove('scrolled')
-  }
-}
+         // pageYOffset or scrollY
+         if (window.pageYOffset > 50) {
+            navbar.classList.add('scrolled')
+         } else {
+            navbar.classList.remove('scrolled')
+         }
+      }
    </script>
 </body>
 
