@@ -83,17 +83,17 @@ h6 {
 
 h1 {
      font-size: 24px;
-     font-family: 'neuropolitical';
+     font-family:'Baloo Chettan', cursive;
 }
 
 h2 {
      font-size: 22px;
-     font-family: 'neuropolitical';
+     font-family: 'Baloo Chettan', cursive;
 }
 
 h3 {
      font-size: 18px;
-     font-family: 'neuropolitical';
+     font-family: 'Baloo Chettan', cursive;
 }
 
 h4 {
@@ -431,7 +431,7 @@ button {
 .business .titlepage span {
      color: #0891f8;
      font-size: 30px;
-     font-family: 'neuropolitical';
+     font-family: 'Baloo Chettan', cursive;
      text-transform: uppercase;
      line-height: 37px;
      padding-bottom: 10px;
@@ -439,7 +439,7 @@ button {
 }
 .navbar{
      font-size: 14px;
-     font-family: 'neuropolitical';
+     font-family: 'Baloo Chettan', cursive;
      text-transform: uppercase;
      transition: background .5s;
 }
@@ -504,7 +504,7 @@ nav.scrolled {
 .projects .titlepage span {
      color: #0891f8;
      font-size: 30px;
-     font-family: 'neuropolitical';
+     font-family: 'Baloo Chettan', cursive;
      text-transform: uppercase;
      line-height: 37px;
      padding-bottom: 10px;
