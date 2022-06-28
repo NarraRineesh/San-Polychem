@@ -35,6 +35,12 @@
 * {
      box-sizing: border-box !important;
 }
+@font-face {
+     font-family: neuropolitical;
+     src: url("../fonts/neuropolitical.rg-regular.ttf");
+ }
+ 
+ 
 
 html {
      scroll-behavior: smooth;
@@ -77,17 +83,17 @@ h6 {
 
 h1 {
      font-size: 24px;
-     font-family: 'Baloo Chettan', cursive;
+     font-family: 'neuropolitical';
 }
 
 h2 {
      font-size: 22px;
-     font-family: 'Baloo Chettan', cursive;
+     font-family: 'neuropolitical';
 }
 
 h3 {
      font-size: 18px;
-     font-family: 'Baloo Chettan', cursive;
+     font-family: 'neuropolitical';
 }
 
 h4 {
@@ -425,15 +431,15 @@ button {
 .business .titlepage span {
      color: #0891f8;
      font-size: 30px;
-     font-family: 'Baloo Chettan', cursive;
+     font-family: 'neuropolitical';
      text-transform: uppercase;
      line-height: 37px;
      padding-bottom: 10px;
      display: inline-block;
 }
 .navbar{
-     font-size: 18px;
-     font-family: 'Baloo Chettan', cursive;
+     font-size: 14px;
+     font-family: 'neuropolitical';
      text-transform: uppercase;
      transition: background .5s;
 }
@@ -498,7 +504,7 @@ nav.scrolled {
 .projects .titlepage span {
      color: #0891f8;
      font-size: 30px;
-     font-family: 'Baloo Chettan', cursive;
+     font-family: 'neuropolitical';
      text-transform: uppercase;
      line-height: 37px;
      padding-bottom: 10px;
@@ -741,7 +747,7 @@ nav.scrolled {
 }
 
 .cont h3 {
-     font-family: 'Righteous', cursive;
+     font-family: 'neuropolitical';
      font-size: 30px;
      line-height: 45px;
      color: #23262d;
