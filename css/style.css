@@ -444,7 +444,7 @@ button {
      transition: background .5s;
 }
 nav.scrolled {
-     background: #0891f8;
+     background: #696969;
    }
 
 .business .titlepage h2 {
@@ -830,7 +830,7 @@ ul.social_icon li a:hover {
 
 .copyright {
      padding: 20px 0px;
-     background: #0891f8;
+     background: #696969;
      margin-top: 50px;
      position: relative;
 }
@@ -980,6 +980,6 @@ ul.social_icon li a:hover {
 /** end footer **/
 @media (max-width: 991px) {
      nav {
-          background: #0891f8;
+          background: #696969;
         }
 }

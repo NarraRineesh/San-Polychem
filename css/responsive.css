@@ -182,7 +182,7 @@
         margin: 0px 0px;
     }
     .copyright::after {
-        background: transparent;
+        background: transparent !important;
     }
     .navigation.navbar {
         float: right;
