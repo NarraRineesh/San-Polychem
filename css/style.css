@@ -136,7 +136,6 @@ li,
 ol {
      margin: 0px;
      padding: 0px;
-     list-style: none;
 }
 
 p {
@@ -443,7 +442,7 @@ button {
      text-transform: uppercase;
      transition: background .5s;
 }
-nav.scrolled {
+nav {
      background: #000;
    }
 
